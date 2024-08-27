@@ -1,0 +1,80 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main--button {
+  background-color: #0067A4;
+  color: white;
+  border: none !important;
+}
+.secondary--button {
+  background-color: transparent;
+  color: white;
+  border: #0067A4 2px solid;
+}
+
+
+
+
+
+
+.landing-text--container{
+  color: white;
+  background-color: #3A1772;
+  width: calc(70vw - 150px);
+  height: 100svh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  border-radius: 0% 45% 5% 0% / 0% 80% 20% 0% ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-left: 150px;
+}
+.landing-text--small {
+  font-size: 25px;
+  margin-bottom: 20px;
+
+}
+.landing-text--mid {
+  font-size: 36px;
+  margin-bottom: 120px;
+
+}
+.landing-text--big {
+  font-size: 96px;
+  margin-bottom: 50px;
+  color: #0067A4;
+
+}
+.landing-button--container{
+  margin-bottom: 0px;
+  display: flex;
+
+  gap: 20px;
+}
+.landing-button{
+  font-size: 25px;
+  padding: 15px 50px;
+  border-radius: 50px;
+}
+.landing--pic {
+  background-color: lightgreen;
+  height: 100svh;
+  width: 60vw;
+  position: fixed;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  z-index: -1;
+}
+.landing--pic img {
+  height: 120%;
+  -webkit-box-reflect: left;
+}
