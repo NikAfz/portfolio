@@ -2,7 +2,7 @@ import myMainPic from "/me2.jpg";
 import arrowPic from "/arrow.png";
 function Hero(props) {
   return (
-    <div className="hero--container">
+    <div className="hero--container" id="hero">
       <div className="hero-img--container">
         <img className=" hero--img" src={myMainPic} alt="my picture" />
       </div>
