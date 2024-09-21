@@ -11,10 +11,10 @@ function PageLink(props) {
         <a href="#skills"> {"<Skills/>"}</a>
       </li>
       <li className="page-link--item">
-        <a href="#"> {"<Projects/>"}</a>
+        <a href="#projects"> {"<Projects/>"}</a>
       </li>
       <li className="page-link--item">
-        <a href="#"> {"<ContactMe/>"}</a>
+        <a href="#footer"> {"<ContactMe/>"}</a>
       </li>
 
       <div className="social--line"></div>
