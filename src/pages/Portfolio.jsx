@@ -10,11 +10,17 @@ function Portfolio(props) {
   return (
     <>
       <SocialLink />
+
       <PageLink />
+
       <Hero />
+
       <AboutMe />
+
       <Skills />
+
       <Projects />
+
       <Footer />
     </>
   );
