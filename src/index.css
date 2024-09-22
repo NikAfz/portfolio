@@ -134,8 +134,9 @@ body {
   /* padding: 5px; */
   box-shadow: 10px 7px 5px #3a17725b;
   border-radius: 62% 38% 75% 25% / 63% 67% 33% 37%;
-  height: 62svh;
+  height: 420px;
   margin-right: 20px;
+  quotes: none;
 }
 .hero--name {
   font-size: 170px;
@@ -187,40 +188,41 @@ body {
   }
 }
 .about--container {
-  /* background-color: rgb(249, 249, 249); */
   display: flex;
   align-items: stretch;
   justify-content: center;
-  height: 80svh;
+  /* height: 80svh; */
   gap: 3%;
   padding: 7% 0;
 }
 .about-text--container {
-  /* height: 80%; */
+  height: auto;
   width: 100%;
-  margin-right: 15%;
+  margin-left: 15%;
 }
 .about-text--container p {
   line-height: 27px;
   word-spacing: 5px;
   font-size: 18px;
 }
-.about--img {
-  background-color: lightblue;
-  height: auto;
-  width: 100%;
-  margin-left: 15%;
-}
 .about-info--container {
   margin-top: 20px;
-  height: 33%;
+  /* background-color: lightblue; */
+  height: auto;
+  width: 100%;
+  margin-left: 5%;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 5px 100px;
   align-items: center;
 }
-
+.info--title {
+  font-weight: 600;
+}
+.info--dis {
+  font-weight: 300;
+  color: rgb(102, 102, 102);
+}
 .skills--container {
   height: 50svh;
   padding: 10svh 0;
