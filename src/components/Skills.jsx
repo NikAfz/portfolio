@@ -18,41 +18,41 @@ function Skills(props) {
       <div className="skills-left--container">
         <h2 className="skills-left--title">teck skills</h2>
         <div className="skills-left-item--container">
-          <Tooltip TransitionComponent={Zoom} title="Html" arrow>
-            <img src={html} alt="" />
+          <Tooltip TransitionComponent={Zoom} title="Html5" arrow>
+            <img src={html} alt="html5" loading="lazy" />
           </Tooltip>
-          <Tooltip TransitionComponent={Zoom} title="Css" arrow>
-            <img src={css} alt="" />
+          <Tooltip TransitionComponent={Zoom} title="Css3" arrow>
+            <img src={css} alt="css3" loading="lazy" />
           </Tooltip>
           <Tooltip TransitionComponent={Zoom} title="JavaScript" arrow>
-            <img src={js} alt="" />
+            <img src={js} alt="Js" loading="lazy" />
           </Tooltip>
           <Tooltip TransitionComponent={Zoom} title="TypeScript" arrow>
-            <img src={ts} alt="" />
+            <img src={ts} alt="Ts" loading="lazy" />
           </Tooltip>
           <Tooltip TransitionComponent={Zoom} title="React" arrow>
-            <img src={react} alt="" />
+            <img src={react} alt="React" loading="lazy" />
           </Tooltip>
           <Tooltip TransitionComponent={Zoom} title="Vite" arrow>
-            <img src={vite} alt="" />
+            <img src={vite} alt="Vite" loading="lazy" />
           </Tooltip>
           <Tooltip TransitionComponent={Zoom} title="ReactRouter" arrow>
-            <img src={rrd} alt="" />
+            <img src={rrd} alt="ReactRouterDom" loading="lazy" />
           </Tooltip>
           <Tooltip TransitionComponent={Zoom} title="Redux" arrow>
-            <img src={redux} alt="" />
+            <img src={redux} alt="Redux" loading="lazy" />
           </Tooltip>
           <Tooltip TransitionComponent={Zoom} title="MUI" arrow>
-            <img src={mui} alt="" />
+            <img src={mui} alt="MUI" loading="lazy" />
           </Tooltip>
           <Tooltip TransitionComponent={Zoom} title="npm" arrow>
-            <img src={npm} alt="" />
+            <img src={npm} alt="npm" loading="lazy" />
           </Tooltip>
           <Tooltip TransitionComponent={Zoom} title="Git" arrow>
-            <img src={git} alt="" />
+            <img src={git} alt="Git" loading="lazy" />
           </Tooltip>
           <Tooltip TransitionComponent={Zoom} title="RestApi" arrow>
-            <img src={api} alt="" />
+            <img src={api} alt="RestApi" loading="lazy" />
           </Tooltip>
         </div>
       </div>
@@ -60,12 +60,12 @@ function Skills(props) {
         <h2 className="skills-left--title">language skills</h2>
         <div className="skills-right-item--container">
           <div className="skills-right-item">
-            <h4>English {"( american )"} :</h4>
-            <p>Good</p>
+            <h4>Persian {"( فارسی )"}:</h4>
+            <p>Native</p>
           </div>
           <div className="skills-right-item">
-            <h4>Persian {"( فارسی )"} :</h4>
-            <p>Good</p>
+            <h4>English {"( american )"}:</h4>
+            <p>Fluent</p>
           </div>
         </div>
       </div>
