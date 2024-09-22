@@ -10,7 +10,7 @@ function Landing(props) {
         <p className="landing-text--small">Hi my name is</p>
 
         <p className="landing-text--big">
-          {"<"}NikAfz/{">"}
+          {"<"}NikAfz/{"/>"}
         </p>
         <p className="landing-text--small">I am a </p>
 
@@ -28,7 +28,7 @@ function Landing(props) {
       </div>
 
       <div className="landing--pic">
-        <img src={meLookingRight} alt="my picture" />
+        <img src={meLookingRight} alt="my picture" loading="lazy" />
       </div>
     </>
   );

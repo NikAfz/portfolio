@@ -6,7 +6,12 @@ import Zoom from "@mui/material/Zoom";
 function ProjectCard(props) {
   return (
     <div className="project-card--container">
-      <img className="project-card--img" src={props.img} alt={props.name} />
+      <img
+        className="project-card--img"
+        src={props.img}
+        alt={props.name}
+        loading="lazy"
+      />
       <p className="project-card--name">{props.name}</p>
       <div className="project-card-button--container">
         <Tooltip title="code" placement="left" arrow TransitionComponent={Zoom}>

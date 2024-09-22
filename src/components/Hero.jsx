@@ -4,7 +4,12 @@ function Hero(props) {
   return (
     <div className="hero--container" id="hero">
       <div className="hero-img--container">
-        <img className=" hero--img" src={myMainPic} alt="my picture" />
+        <img
+          className=" hero--img"
+          src={myMainPic}
+          alt="my picture"
+          loading="lazy"
+        />
       </div>
       <h1 className="hero--name">
         {"<"}Nik <div className="name--space"></div> Afz{"/>"}

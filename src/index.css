@@ -73,6 +73,7 @@ body {
 }
 .landing--pic img {
   height: 120%;
+  image-rendering: optimizeSpeed;
   -webkit-box-reflect: left;
 }
 
