@@ -27,11 +27,6 @@ function Footer(props) {
         ></textarea>
         <button className="contact--button">Send !</button>
       </form>
-      <div className="footer--divider"></div>
-      <div className="footer--credit">
-        made by <a href="#">NikAfz</a> for <a href="#">NikAfz</a>{" "}
-        <strong> &hearts; </strong>
-      </div>
     </div>
   );
 }
