@@ -10,6 +10,11 @@ function AboutMe(props) {
           velit corrupti. Ex at obcaecati ut accusantium! Nisi ullam mollitia
           natus vitae, officiis, aliquam odit architecto tempora veritatis porro
           expedita facilis perferendis corporis eaque. Commodi ex autem sequi
+          <br />
+          <br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          obcaecati blanditiis dolor rem corrupti voluptate nisi asperiores,
+          placeat quia repellendus.
         </p>
       </div>
 
