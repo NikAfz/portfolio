@@ -3,6 +3,8 @@ import { useState } from "react";
 import watchShop from "/projects/watchShop.png";
 import ezSearch from "/projects/ezSearch.png";
 import cryptopia from "/projects/cryptopia.png";
+import ProM from "/projects/ProM.png";
+
 function useProjectData(params) {
   const [data, setData] = useState([
     {
@@ -24,10 +26,10 @@ function useProjectData(params) {
       liveLink: "https://nikafz.github.io/cryptopia/",
     },
     {
-      name: "prop",
-      img: watchShop,
-      codeLink: "google.com",
-      liveLink: "google.com",
+      name: "ProM",
+      img: ProM,
+      codeLink: "https://github.com/NikAfz/project-manager",
+      liveLink: "https://nikafz.github.io/project-manager/",
     },
   ]);
   return data;
