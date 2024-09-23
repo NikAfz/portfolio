@@ -14,6 +14,16 @@ function Hero(props) {
       <h1 className="hero--name">
         {"<"}Nik <div className="name--space"></div> Afz{"/>"}
       </h1>
+      <div className="hero-button--container">
+        <a href="#footer">
+          <button className="hero--button">
+            get in
+            <br />
+            touch
+          </button>
+        </a>
+      </div>
+
       <div className="hero--styling-1">
         <svg
           width="150"
