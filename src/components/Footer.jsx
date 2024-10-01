@@ -42,7 +42,9 @@ function Footer(props) {
   return (
     <div id="footer" className="footer--container">
       <form onSubmit={handleSubmit} className="contact--form">
-        <h1 className="contact--title">Contact Me</h1>
+        <div className="contact-title--container">
+          <h1 className="contact--title">Contact Me</h1>
+        </div>
         <div className="contact--info">
           <input
             className="contact--name"
