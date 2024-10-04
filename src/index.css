@@ -724,10 +724,13 @@ body {
 @media (max-width: 475px) {
   body,
   html {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
     overflow-x: hidden;
   }
+  * {
+    box-sizing: border-box;
+  }
+
   .landing-text--container {
     background-color: hsla(263, 66%, 27%, 0.92);
     height: 50vh;
@@ -741,7 +744,7 @@ body {
     position: absolute;
     bottom: 0px;
     left: 0;
-    padding-left: 50px;
+    padding-left: 30px;
   }
   .landing-text--small {
     font-size: 20px;
