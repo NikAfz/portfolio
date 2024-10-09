@@ -3,18 +3,18 @@ function AboutMe(props) {
     <div className="about--container" id="about">
       <div className="about-text--container">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
-          impedit? Provident excepturi quis ipsum adipisci earum modi unde sit
-          debitis itaque dolorum, quaerat temporibus placeat hic expedita,
-          officiis consectetur, error est aliquam perferendis eaque natus quod
-          velit corrupti. Ex at obcaecati ut accusantium! Nisi ullam mollitia
-          natus vitae, officiis, aliquam odit architecto tempora veritatis porro
-          expedita facilis perferendis corporis eaque. Commodi ex autem sequi
+          As a front-end developer, I’m passionate about blending creativity
+          with functionality to build responsive, intuitive, and engaging
+          websites. Using React.js and JavaScript, I focus on crafting sleek
+          landing pages and web applications that are as delightful to use as
+          they are to look at.
           <br />
           <br />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-          obcaecati blanditiis dolor rem corrupti voluptate nisi asperiores,
-          placeat quia repellendus.
+          Take a look at my projects to see how I turn ideas into immersive
+          digital experiences. Driven by a love for learning and innovation, I’m
+          constantly refining my skills to push my capabilities. Whether you're
+          looking to collaborate, or you're simply browsing, I'm excited to
+          share my journey in front-end development with you!
         </p>
       </div>
 
