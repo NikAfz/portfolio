@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import SocialLink from "../components/SocialLink";
 import meLookingRight from "/me1.jpg";
-import Resume from "../assets/Resume.pdf";
+import resume from "../assets/resume.pdf";
 function Landing(props) {
   return (
     <>
@@ -21,7 +21,7 @@ function Landing(props) {
             <button className="landing-button main--button">portfolio</button>
           </Link>
 
-          <a href={Resume} target="_blank">
+          <a href={resume} target="_blank">
             <button className="landing-button secondary--button">résumé</button>
           </a>
         </div>
