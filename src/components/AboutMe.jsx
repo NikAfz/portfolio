@@ -1,6 +1,6 @@
 function AboutMe(props) {
   return (
-    <div className="about--container" id="about">
+    <section className="about--container" id="about">
       <div className="about-text--container">
         <p>
           As a front-end developer, I’m passionate about blending creativity
@@ -36,7 +36,7 @@ function AboutMe(props) {
           <p className="info--dis">open</p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

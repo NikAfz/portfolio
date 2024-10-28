@@ -1,6 +1,6 @@
 function PageLink(props) {
   return (
-    <div className="page-link--container">
+    <nav className="page-link--container">
       <li className="page-link--item">
         <a href="#hero"> {"<NikAfz/>"}</a>
       </li>
@@ -18,7 +18,7 @@ function PageLink(props) {
       </li>
 
       <div className="social--line"></div>
-    </div>
+    </nav>
   );
 }
 export default PageLink;

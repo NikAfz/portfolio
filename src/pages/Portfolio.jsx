@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 
 function Portfolio(props) {
   return (
-    <>
+    <main>
       <SocialLink />
 
       <PageLink />
@@ -22,7 +22,7 @@ function Portfolio(props) {
       <Projects />
 
       <Footer />
-    </>
+    </main>
   );
 }
 

@@ -2,13 +2,14 @@ import myMainPic from "/me2.jpg";
 import arrowPic from "/arrow.png";
 function Hero(props) {
   return (
-    <div className="hero--container" id="hero">
+    <section className="hero--container" id="hero">
       <div className="hero-img--container">
         <img
           className=" hero--img"
           src={myMainPic}
-          alt="my picture"
-          loading="lazy"
+          alt="Nik Afz picture"
+          height={300}
+          width={350}
         />
       </div>
       <h1 className="hero--name">
@@ -115,7 +116,7 @@ function Hero(props) {
         </svg>
       </div>
       <img className="hero--styling-arrow" src={arrowPic} alt="" />
-    </div>
+    </section>
   );
 }
 

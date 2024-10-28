@@ -21,7 +21,7 @@ function Landing(props) {
             <button className="landing-button main--button">portfolio</button>
           </Link>
 
-          <a href="src/assets/NikAfz.pdf" download>
+          <a href="src/assets/Resume(2).pdf" download>
             <button className="landing-button secondary--button">résumé</button>
           </a>
         </div>

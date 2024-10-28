@@ -11,6 +11,8 @@ function ProjectCard(props) {
         src={props.img}
         alt={props.name}
         loading="lazy"
+        height={260}
+        width={460}
       />
       <p className="project-card--name">{props.name}</p>
       <div className="project-card-button--container">

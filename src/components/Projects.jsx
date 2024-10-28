@@ -13,10 +13,10 @@ function Projects(props) {
     />
   ));
   return (
-    <div id="projects" className="project--container">
+    <section id="projects" className="project--container">
       <h1 className="project--title">Projects</h1>
       <div className="project-list--container">{projectselemnt}</div>
-    </div>
+    </section>
   );
 }
 export default Projects;

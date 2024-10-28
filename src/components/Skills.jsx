@@ -14,45 +14,69 @@ import { Tooltip } from "@mui/material";
 import Zoom from "@mui/material/Zoom";
 function Skills(props) {
   return (
-    <div className="skills--container" id="skills">
+    <section className="skills--container" id="skills">
       <div className="skills-left--container">
         <h2 className="skills-left--title">teck skills</h2>
         <div className="skills-left-item--container">
           <Tooltip TransitionComponent={Zoom} title="Html5" arrow>
-            <img src={html} alt="html5" loading="lazy" />
+            <img height={50} width={50} src={html} alt="html5" loading="lazy" />
           </Tooltip>
           <Tooltip TransitionComponent={Zoom} title="Css3" arrow>
-            <img src={css} alt="css3" loading="lazy" />
+            <img height={50} width={50} src={css} alt="css3" loading="lazy" />
           </Tooltip>
           <Tooltip TransitionComponent={Zoom} title="JavaScript" arrow>
-            <img src={js} alt="Js" loading="lazy" />
+            <img height={50} width={50} src={js} alt="Js" loading="lazy" />
           </Tooltip>
           <Tooltip TransitionComponent={Zoom} title="TypeScript" arrow>
-            <img src={ts} alt="Ts" loading="lazy" />
+            <img height={50} width={50} src={ts} alt="Ts" loading="lazy" />
           </Tooltip>
           <Tooltip TransitionComponent={Zoom} title="React" arrow>
-            <img src={react} alt="React" loading="lazy" />
+            <img
+              height={50}
+              width={50}
+              src={react}
+              alt="React"
+              loading="lazy"
+            />
           </Tooltip>
           <Tooltip TransitionComponent={Zoom} title="Vite" arrow>
-            <img src={vite} alt="Vite" loading="lazy" />
+            <img height={50} width={50} src={vite} alt="Vite" loading="lazy" />
           </Tooltip>
           <Tooltip TransitionComponent={Zoom} title="ReactRouter" arrow>
-            <img src={rrd} alt="ReactRouterDom" loading="lazy" />
+            <img
+              height={50}
+              width={50}
+              src={rrd}
+              alt="ReactRouterDom"
+              loading="lazy"
+            />
           </Tooltip>
           <Tooltip TransitionComponent={Zoom} title="Redux" arrow>
-            <img src={redux} alt="Redux" loading="lazy" />
+            <img
+              height={50}
+              width={50}
+              src={redux}
+              alt="Redux"
+              loading="lazy"
+            />
           </Tooltip>
           <Tooltip TransitionComponent={Zoom} title="MUI" arrow>
-            <img src={mui} alt="MUI" loading="lazy" />
+            <img height={50} width={50} src={mui} alt="MUI" loading="lazy" />
           </Tooltip>
           <Tooltip TransitionComponent={Zoom} title="npm" arrow>
-            <img src={npm} alt="npm" loading="lazy" />
+            <img height={50} width={50} src={npm} alt="npm" loading="lazy" />
           </Tooltip>
           <Tooltip TransitionComponent={Zoom} title="Git" arrow>
-            <img src={git} alt="Git" loading="lazy" />
+            <img height={50} width={50} src={git} alt="Git" loading="lazy" />
           </Tooltip>
           <Tooltip TransitionComponent={Zoom} title="RestApi" arrow>
-            <img src={api} alt="RestApi" loading="lazy" />
+            <img
+              height={50}
+              width={50}
+              src={api}
+              alt="RestApi"
+              loading="lazy"
+            />
           </Tooltip>
         </div>
       </div>
@@ -69,7 +93,7 @@ function Skills(props) {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 export default Skills;

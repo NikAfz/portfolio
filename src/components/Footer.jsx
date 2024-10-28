@@ -40,7 +40,7 @@ function Footer(props) {
   }
 
   return (
-    <div id="footer" className="footer--container">
+    <footer id="footer" className="footer--container">
       <form onSubmit={handleSubmit} className="contact--form">
         <div className="contact-title--container">
           <h1 className="contact--title">Contact Me</h1>
@@ -77,7 +77,7 @@ function Footer(props) {
           Send !
         </button>
       </form>
-    </div>
+    </footer>
   );
 }
 
