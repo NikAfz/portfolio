@@ -518,7 +518,8 @@ body {
 .contact--info {
   display: flex;
   justify-content: space-between;
-  gap: 50px;
+  /* gap: 50px; */
+  row-gap: 50px;
   width: 100%;
   margin: 0 auto;
 }
@@ -527,6 +528,9 @@ body {
   padding: 10px 15px;
   flex: 1;
   min-width: 0;
+}
+.contact--email {
+  margin-left: 50px;
 }
 .contact--textarea {
   padding: 20px;
@@ -542,6 +546,10 @@ body {
   color: white;
   transition: all 0.15s;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
 }
 
 .contact--button:hover {
@@ -697,6 +705,9 @@ body {
     border-radius: 25px;
     position: relative;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+  .contact--email {
+    margin-left: 0px;
   }
 }
 @media (orientation: portrait) {
