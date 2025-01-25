@@ -9,7 +9,6 @@ function Hero(props) {
           src={myMainPic}
           alt="Nik Afz picture"
           height={300}
-          width={350}
         />
       </div>
       <h1 className="hero--name">
