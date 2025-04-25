@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import SocialLink from "../components/SocialLink";
 import meLookingRight from "/me1.jpg";
-import resume from "../assets/resume.pdf";
+import resume from "../assets/NikAfzCV.pdf";
 
 function Landing(props) {
   return (
