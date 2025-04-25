@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import SocialLink from "../components/SocialLink";
 import meLookingRight from "/me1.jpg";
+// import resume from "../assets/NikAfzCV.pdf";
 import resume from "../assets/NikAfzCV.pdf";
 
 function Landing(props) {
@@ -15,7 +16,7 @@ function Landing(props) {
         </p>
         <p className="landing-text--small">I am a </p>
 
-        <p className="landing-text--mid">Front End web developer</p>
+        <p className="landing-text--mid">Software Developer</p>
 
         <div className="landing-button--container">
           <Link to="/portfolio/more">

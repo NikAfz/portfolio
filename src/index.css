@@ -299,9 +299,9 @@ body {
   height: 80%;
   gap: 0px 50px;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   align-items: center;
-  justify-items: center;
+  justify-items:center;
 }
 .skills-left-item--container img {
   height: 50px;
@@ -617,7 +617,7 @@ body {
   }
   .skills-left-item--container {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
   }
   .skills-right--container {
     height: 80svh;

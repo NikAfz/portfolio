@@ -25,7 +25,7 @@ function AboutMe(props) {
         </div>
         <div className="about-info">
           <p className="info--title">Education :</p>
-          <p className="info--dis">diploma</p>
+          <p className="info--dis">bachelor</p>
         </div>
         <div className="about-info">
           <p className="info--title">Mail :</p>

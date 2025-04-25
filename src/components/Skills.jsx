@@ -6,12 +6,16 @@ import redux from "/redux.svg";
 import git from "/git.png";
 import react from "/react.svg";
 import html from "/html.svg";
-import css from "/css.svg";
+import css from "/purple-css-logo.png";
 import mui from "/material-ui.svg";
 import npm from "/npm.svg";
 import api from "/r-api.svg";
+import reactNative from "/react-native-1.svg";
+import expo from "/Expo-logo.png";
+
 import { Tooltip } from "@mui/material";
 import Zoom from "@mui/material/Zoom";
+
 function Skills(props) {
   return (
     <section className="skills--container" id="skills">
@@ -21,15 +25,19 @@ function Skills(props) {
           <Tooltip TransitionComponent={Zoom} title="Html5" arrow>
             <img height={50} width={50} src={html} alt="html5" loading="lazy" />
           </Tooltip>
+
           <Tooltip TransitionComponent={Zoom} title="Css3" arrow>
             <img height={50} width={50} src={css} alt="css3" loading="lazy" />
           </Tooltip>
+
           <Tooltip TransitionComponent={Zoom} title="JavaScript" arrow>
             <img height={50} width={50} src={js} alt="Js" loading="lazy" />
           </Tooltip>
+
           <Tooltip TransitionComponent={Zoom} title="TypeScript" arrow>
             <img height={50} width={50} src={ts} alt="Ts" loading="lazy" />
           </Tooltip>
+
           <Tooltip TransitionComponent={Zoom} title="React" arrow>
             <img
               height={50}
@@ -39,9 +47,25 @@ function Skills(props) {
               loading="lazy"
             />
           </Tooltip>
+
+          <Tooltip TransitionComponent={Zoom} title="React Native" arrow>
+            <img
+              height={50}
+              width={50}
+              src={reactNative}
+              alt="React Native"
+              loading="lazy"
+            />
+          </Tooltip>
+
           <Tooltip TransitionComponent={Zoom} title="Vite" arrow>
             <img height={50} width={50} src={vite} alt="Vite" loading="lazy" />
           </Tooltip>
+
+          <Tooltip TransitionComponent={Zoom} title="expo" arrow>
+            <img height={50} width={50} src={expo} alt="expo" loading="lazy" />
+          </Tooltip>
+
           <Tooltip TransitionComponent={Zoom} title="ReactRouter" arrow>
             <img
               height={50}
@@ -51,7 +75,8 @@ function Skills(props) {
               loading="lazy"
             />
           </Tooltip>
-          <Tooltip TransitionComponent={Zoom} title="Redux" arrow>
+
+          {/* <Tooltip TransitionComponent={Zoom} title="Redux" arrow>
             <img
               height={50}
               width={50}
@@ -59,16 +84,20 @@ function Skills(props) {
               alt="Redux"
               loading="lazy"
             />
-          </Tooltip>
+          </Tooltip> */}
+
           <Tooltip TransitionComponent={Zoom} title="MUI" arrow>
             <img height={50} width={50} src={mui} alt="MUI" loading="lazy" />
           </Tooltip>
+
           <Tooltip TransitionComponent={Zoom} title="npm" arrow>
             <img height={50} width={50} src={npm} alt="npm" loading="lazy" />
           </Tooltip>
+
           <Tooltip TransitionComponent={Zoom} title="Git" arrow>
             <img height={50} width={50} src={git} alt="Git" loading="lazy" />
           </Tooltip>
+
           <Tooltip TransitionComponent={Zoom} title="RestApi" arrow>
             <img
               height={50}
@@ -80,6 +109,7 @@ function Skills(props) {
           </Tooltip>
         </div>
       </div>
+
       <div className="skills-right--container">
         <h2 className="skills-left--title">language skills</h2>
         <div className="skills-right-item--container">
