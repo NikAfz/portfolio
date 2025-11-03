@@ -12,6 +12,10 @@ import npm from "/npm.svg";
 import api from "/r-api.svg";
 import reactNative from "/react-native-1.svg";
 import expo from "/Expo-logo.png";
+import axios from "../../public/Axios.svg";
+import express from "../../public/Express.svg";
+import node from "../../public/Node.js.svg";
+import docker from "../../public/Docker.svg";
 
 import { Tooltip } from "@mui/material";
 import Zoom from "@mui/material/Zoom";
@@ -90,8 +94,32 @@ function Skills(props) {
             <img height={50} width={50} src={mui} alt="MUI" loading="lazy" />
           </Tooltip>
 
+          <Tooltip TransitionComponent={Zoom} title="Axios" arrow>
+            <img
+              height={50}
+              width={50}
+              src={axios}
+              alt="axios"
+              loading="lazy"
+            />
+          </Tooltip>
+
           <Tooltip TransitionComponent={Zoom} title="npm" arrow>
             <img height={50} width={50} src={npm} alt="npm" loading="lazy" />
+          </Tooltip>
+
+          <Tooltip TransitionComponent={Zoom} title="Express" arrow>
+            <img
+              height={50}
+              width={50}
+              src={express}
+              alt="express"
+              loading="lazy"
+            />
+          </Tooltip>
+
+          <Tooltip TransitionComponent={Zoom} title="Node" arrow>
+            <img height={50} width={50} src={node} alt="node" loading="lazy" />
           </Tooltip>
 
           <Tooltip TransitionComponent={Zoom} title="Git" arrow>
@@ -104,6 +132,16 @@ function Skills(props) {
               width={50}
               src={api}
               alt="RestApi"
+              loading="lazy"
+            />
+          </Tooltip>
+
+          <Tooltip TransitionComponent={Zoom} title="Docker" arrow>
+            <img
+              height={50}
+              width={50}
+              src={docker}
+              alt="docker"
               loading="lazy"
             />
           </Tooltip>

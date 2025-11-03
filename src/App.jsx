@@ -12,8 +12,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/portfolio" element={<Landing />} />
-        <Route path="/portfolio/more" element={<Portfolio />} />
-        {/* <Route path="*" element={<Page404 />} /> */}
+        <Route path="/portfolio/detail" element={<Portfolio />} />
+        {/* <Route path="*" element={<Page404 />} />  make it redirect to home page */}
       </Routes>
     </BrowserRouter>
   );

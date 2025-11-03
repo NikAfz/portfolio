@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import SocialLink from "../components/SocialLink";
 import meLookingRight from "/me1.jpg";
 // import resume from "../assets/NikAfzCV.pdf";
-import resume from "../assets/NikAfzCV.pdf";
+import resume from "../assets/Resume-2025-11-23.pdf";
 
 function Landing(props) {
   return (
@@ -16,10 +16,10 @@ function Landing(props) {
         </p>
         <p className="landing-text--small">I am a </p>
 
-        <p className="landing-text--mid">Software Developer</p>
+        <p className="landing-text--mid">Frontend Web Developer</p>
 
         <div className="landing-button--container">
-          <Link to="/portfolio/more">
+          <Link to="/portfolio/detail">
             <button className="landing-button main--button">portfolio</button>
           </Link>
 

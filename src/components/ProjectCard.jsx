@@ -16,21 +16,38 @@ function ProjectCard(props) {
       />
       <p className="project-card--name">{props.name}</p>
       <div className="project-card-button--container">
-        <Tooltip title="code" placement="left" arrow TransitionComponent={Zoom}>
-          <a className="project-card--button" href={props.code} target="_blank">
-            <CodeIcon fontSize="large" />
-          </a>
-        </Tooltip>
-        <Tooltip
-          title="live"
-          placement="right"
-          arrow
-          TransitionComponent={Zoom}
-        >
-          <a className="project-card--button" href={props.live} target="_blank">
-            <LaunchIcon fontSize="large" />
-          </a>
-        </Tooltip>
+        {props.code ? (
+          <Tooltip
+            title="code"
+            placement="left"
+            arrow
+            TransitionComponent={Zoom}
+          >
+            <a
+              className="project-card--button"
+              href={props.code}
+              target="_blank"
+            >
+              <CodeIcon fontSize="large" />
+            </a>
+          </Tooltip>
+        ) : null}
+        {props.live ? (
+          <Tooltip
+            title="live"
+            placement="right"
+            arrow
+            TransitionComponent={Zoom}
+          >
+            <a
+              className="project-card--button"
+              href={props.live}
+              target="_blank"
+            >
+              <LaunchIcon fontSize="large" />
+            </a>
+          </Tooltip>
+        ) : null}
       </div>
     </div>
   );

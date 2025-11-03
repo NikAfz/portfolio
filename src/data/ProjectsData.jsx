@@ -4,9 +4,16 @@ import watchShop from "/projects/watchShop.png";
 import ezSearch from "/projects/ezSearch.png";
 import cryptopia from "/projects/cryptopia.png";
 import ProM from "/projects/ProM.png";
+import libmate from "/projects/LibMate.png";
 
 function useProjectData(params) {
   const [data, setData] = useState([
+    {
+      name: "LibMate",
+      img: libmate,
+      codeLink: null,
+      liveLink: "https://www.libmate.ir/",
+    },
     {
       name: "Luxetick",
       img: watchShop,
