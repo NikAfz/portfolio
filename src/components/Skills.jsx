@@ -5,6 +5,8 @@ import vite from "/vite.svg";
 import redux from "/redux.svg";
 import git from "/git.png";
 import react from "/react.svg";
+import vue from "/vue.svg";
+import nuxt from "/nuxt.svg";
 import html from "/html.svg";
 import css from "/purple-css-logo.png";
 import mui from "/material-ui.svg";
@@ -61,6 +63,28 @@ function Skills(props) {
               loading="lazy"
             />
           </Tooltip>
+
+          <Tooltip TransitionComponent={Zoom} title="vue" arrow>
+            <img
+              height={50}
+              width={50}
+              src={vue}
+              alt="vue"
+              loading="lazy"
+            />
+          </Tooltip>
+
+          <Tooltip TransitionComponent={Zoom} title="Nuxt" arrow>
+            <img
+              height={50}
+              width={50}
+              src={nuxt}
+              alt="nuxt"
+              loading="lazy"
+            />
+          </Tooltip>
+
+
 
           <Tooltip TransitionComponent={Zoom} title="Vite" arrow>
             <img height={50} width={50} src={vite} alt="Vite" loading="lazy" />
