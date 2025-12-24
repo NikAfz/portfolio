@@ -39,7 +39,7 @@ function AboutMe(props) {
         </div>
         <div className="about-info">
           <p className="info--title">Employment :</p>
-          <p className="info--dis">open</p>
+          <p className="info--dis">employed {"("}closed{")"}</p>
         </div>
       </div>
     </section>
