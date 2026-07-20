@@ -1,55 +1,48 @@
-import project1 from "/projects/watchShop.png";
 import LaunchIcon from "@mui/icons-material/Launch";
 import CodeIcon from "@mui/icons-material/Code";
-import { Tooltip } from "@mui/material";
-import Zoom from "@mui/material/Zoom";
-function ProjectCard(props) {
+
+function ProjectCard({ name, img, code, live }) {
   return (
-    <div className="project-card--container">
-      <img
-        className="project-card--img"
-        src={props.img}
-        alt={props.name}
-        loading="lazy"
-        height={260}
-        width={460}
-      />
-      <p className="project-card--name">{props.name}</p>
-      <div className="project-card-button--container">
-        {props.code ? (
-          <Tooltip
-            title="code"
-            placement="left"
-            arrow
-            TransitionComponent={Zoom}
-          >
-            <a
-              className="project-card--button"
-              href={props.code}
-              target="_blank"
-            >
-              <CodeIcon fontSize="large" />
-            </a>
-          </Tooltip>
-        ) : null}
-        {props.live ? (
-          <Tooltip
-            title="live"
-            placement="right"
-            arrow
-            TransitionComponent={Zoom}
-          >
-            <a
-              className="project-card--button"
-              href={props.live}
-              target="_blank"
-            >
-              <LaunchIcon fontSize="large" />
-            </a>
-          </Tooltip>
-        ) : null}
+    <article className="project-card">
+      <div className="project-card__media">
+        <img
+          className="project-card__img"
+          src={img}
+          alt={`${name} preview`}
+          loading="lazy"
+          width={640}
+          height={360}
+        />
       </div>
-    </div>
+      <div className="project-card__body">
+        <h3 className="project-card__name">{name}</h3>
+        <div className="project-card__actions">
+          {code ? (
+            <a
+              className="project-card__link"
+              href={code}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <CodeIcon fontSize="small" />
+              Code
+            </a>
+          ) : null}
+          {live ? (
+            <a
+              className="project-card__link project-card__link--primary"
+              href={live}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <LaunchIcon fontSize="small" />
+              Live
+            </a>
+          ) : null}
+        </div>
+      </div>
+    </article>
   );
 }
+
 export default ProjectCard;

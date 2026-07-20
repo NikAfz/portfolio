@@ -1,38 +1,38 @@
 import { Link } from "react-router-dom";
-import SocialLink from "../components/SocialLink";
-import meLookingRight from "/me1.jpg";
-// import resume from "../assets/NikAfzCV.pdf";
-import resume from "../assets/Resume-2025-11-23.pdf";
+import meLookingRight from "/me3.jpg";
+import resume from "../assets/resumee-2026-07-20.pdf";
 
-function Landing(props) {
+function Landing() {
   return (
-    <>
-      <SocialLink />
-      <div className="landing-text--container">
-        <p className="landing-text--small">Hi my name is</p>
+    <main className="landing">
+      <div className="landing__media" aria-hidden="true">
+        <img src={meLookingRight} alt="" className="landing__photo" />
+        <div className="landing__veil" />
+      </div>
 
-        <p className="landing-text--big">
-          {"<"}NikAfz{"/>"}
+      <div className="landing__content">
+        <p className="landing__eyebrow">Frontend Web Developer</p>
+        <h1 className="landing__brand">NikAfz</h1>
+        <p className="landing__lede">
+          Fast, clean interfaces — from production apps to polished side
+          projects.
         </p>
-        <p className="landing-text--small">I am a </p>
-
-        <p className="landing-text--mid">Frontend Web Developer</p>
-
-        <div className="landing-button--container">
-          <Link to="/portfolio/detail">
-            <button className="landing-button main--button">portfolio</button>
+        <div className="landing__actions">
+          <Link to="/detail" className="btn btn--primary">
+            View portfolio
           </Link>
-
-          <a href={resume} target="_blank">
-            <button className="landing-button secondary--button">résumé</button>
+          <a
+            href={resume}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn--ghost"
+          >
+            Résumé
           </a>
         </div>
       </div>
-
-      <div className="landing--pic">
-        <img src={meLookingRight} alt="my picture" loading="lazy" />
-      </div>
-    </>
+    </main>
   );
 }
+
 export default Landing;

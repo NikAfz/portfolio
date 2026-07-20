@@ -2,7 +2,6 @@ import js from "/javascript.svg";
 import ts from "/typescript.png";
 import rrd from "/rrd.svg";
 import vite from "/vite.svg";
-import redux from "/redux.svg";
 import git from "/git.png";
 import react from "/react.svg";
 import vue from "/vue.svg";
@@ -14,178 +13,89 @@ import npm from "/npm.svg";
 import api from "/r-api.svg";
 import reactNative from "/react-native-1.svg";
 import expo from "/Expo-logo.png";
-import axios from "../../public/Axios.svg";
-import express from "../../public/Express.svg";
-import node from "../../public/Node.js.svg";
-import docker from "../../public/Docker.svg";
+import axios from "/Axios.svg";
+import express from "/Express.svg";
+import node from "/Node.js.svg";
+import docker from "/Docker.svg";
 
 import { Tooltip } from "@mui/material";
 import Zoom from "@mui/material/Zoom";
 
-function Skills(props) {
+const techSkills = [
+  { src: html, label: "HTML5" },
+  { src: css, label: "CSS3" },
+  { src: js, label: "JavaScript" },
+  { src: ts, label: "TypeScript" },
+  { src: react, label: "React" },
+  { src: reactNative, label: "React Native" },
+  { src: vue, label: "Vue" },
+  { src: nuxt, label: "Nuxt" },
+  { src: vite, label: "Vite" },
+  { src: expo, label: "Expo" },
+  { src: rrd, label: "React Router" },
+  { src: mui, label: "MUI" },
+  { src: axios, label: "Axios" },
+  { src: npm, label: "npm" },
+  { src: express, label: "Express" },
+  { src: node, label: "Node.js" },
+  { src: git, label: "Git" },
+  { src: api, label: "REST API" },
+  { src: docker, label: "Docker" },
+];
+
+const languages = [
+  { name: "Persian", detail: "Native", native: "فارسی" },
+  { name: "English", detail: "Fluent", native: "American" },
+];
+
+function Skills() {
   return (
-    <section className="skills--container" id="skills">
-      <div className="skills-left--container">
-        <h2 className="skills-left--title">teck skills</h2>
-        <div className="skills-left-item--container">
-          <Tooltip TransitionComponent={Zoom} title="Html5" arrow>
-            <img height={50} width={50} src={html} alt="html5" loading="lazy" />
-          </Tooltip>
-
-          <Tooltip TransitionComponent={Zoom} title="Css3" arrow>
-            <img height={50} width={50} src={css} alt="css3" loading="lazy" />
-          </Tooltip>
-
-          <Tooltip TransitionComponent={Zoom} title="JavaScript" arrow>
-            <img height={50} width={50} src={js} alt="Js" loading="lazy" />
-          </Tooltip>
-
-          <Tooltip TransitionComponent={Zoom} title="TypeScript" arrow>
-            <img height={50} width={50} src={ts} alt="Ts" loading="lazy" />
-          </Tooltip>
-
-          <Tooltip TransitionComponent={Zoom} title="React" arrow>
-            <img
-              height={50}
-              width={50}
-              src={react}
-              alt="React"
-              loading="lazy"
-            />
-          </Tooltip>
-
-          <Tooltip TransitionComponent={Zoom} title="React Native" arrow>
-            <img
-              height={50}
-              width={50}
-              src={reactNative}
-              alt="React Native"
-              loading="lazy"
-            />
-          </Tooltip>
-
-          <Tooltip TransitionComponent={Zoom} title="vue" arrow>
-            <img
-              height={50}
-              width={50}
-              src={vue}
-              alt="vue"
-              loading="lazy"
-            />
-          </Tooltip>
-
-          <Tooltip TransitionComponent={Zoom} title="Nuxt" arrow>
-            <img
-              height={50}
-              width={50}
-              src={nuxt}
-              alt="nuxt"
-              loading="lazy"
-            />
-          </Tooltip>
-
-
-
-          <Tooltip TransitionComponent={Zoom} title="Vite" arrow>
-            <img height={50} width={50} src={vite} alt="Vite" loading="lazy" />
-          </Tooltip>
-
-          <Tooltip TransitionComponent={Zoom} title="expo" arrow>
-            <img height={50} width={50} src={expo} alt="expo" loading="lazy" />
-          </Tooltip>
-
-          <Tooltip TransitionComponent={Zoom} title="ReactRouter" arrow>
-            <img
-              height={50}
-              width={50}
-              src={rrd}
-              alt="ReactRouterDom"
-              loading="lazy"
-            />
-          </Tooltip>
-
-          {/* <Tooltip TransitionComponent={Zoom} title="Redux" arrow>
-            <img
-              height={50}
-              width={50}
-              src={redux}
-              alt="Redux"
-              loading="lazy"
-            />
-          </Tooltip> */}
-
-          <Tooltip TransitionComponent={Zoom} title="MUI" arrow>
-            <img height={50} width={50} src={mui} alt="MUI" loading="lazy" />
-          </Tooltip>
-
-          <Tooltip TransitionComponent={Zoom} title="Axios" arrow>
-            <img
-              height={50}
-              width={50}
-              src={axios}
-              alt="axios"
-              loading="lazy"
-            />
-          </Tooltip>
-
-          <Tooltip TransitionComponent={Zoom} title="npm" arrow>
-            <img height={50} width={50} src={npm} alt="npm" loading="lazy" />
-          </Tooltip>
-
-          <Tooltip TransitionComponent={Zoom} title="Express" arrow>
-            <img
-              height={50}
-              width={50}
-              src={express}
-              alt="express"
-              loading="lazy"
-            />
-          </Tooltip>
-
-          <Tooltip TransitionComponent={Zoom} title="Node" arrow>
-            <img height={50} width={50} src={node} alt="node" loading="lazy" />
-          </Tooltip>
-
-          <Tooltip TransitionComponent={Zoom} title="Git" arrow>
-            <img height={50} width={50} src={git} alt="Git" loading="lazy" />
-          </Tooltip>
-
-          <Tooltip TransitionComponent={Zoom} title="RestApi" arrow>
-            <img
-              height={50}
-              width={50}
-              src={api}
-              alt="RestApi"
-              loading="lazy"
-            />
-          </Tooltip>
-
-          <Tooltip TransitionComponent={Zoom} title="Docker" arrow>
-            <img
-              height={50}
-              width={50}
-              src={docker}
-              alt="docker"
-              loading="lazy"
-            />
-          </Tooltip>
+    <section className="section skills" id="skills">
+      <div className="section__inner">
+        <div className="section__header">
+          <p className="section__eyebrow">Skills</p>
+          <h2 className="section__title">Tools I reach for</h2>
+          <p className="section__lede">
+            A practical stack for shipping polished frontend — and enough
+            backend to get things live.
+          </p>
         </div>
-      </div>
 
-      <div className="skills-right--container">
-        <h2 className="skills-left--title">language skills</h2>
-        <div className="skills-right-item--container">
-          <div className="skills-right-item">
-            <h4>Persian {"( فارسی )"}:</h4>
-            <p>Native</p>
-          </div>
-          <div className="skills-right-item">
-            <h4>English {"( american )"}:</h4>
-            <p>Fluent</p>
-          </div>
+        <div className="skills__tech">
+          {techSkills.map((skill) => (
+            <Tooltip
+              key={skill.label}
+              TransitionComponent={Zoom}
+              title={skill.label}
+              arrow
+            >
+              <div className="skills__icon" tabIndex={0}>
+                <img
+                  src={skill.src}
+                  alt={skill.label}
+                  width={40}
+                  height={40}
+                  loading="lazy"
+                />
+              </div>
+            </Tooltip>
+          ))}
+        </div>
+
+        <div className="skills__langs">
+          {languages.map((lang) => (
+            <div key={lang.name} className="skills__lang">
+              <h3>
+                {lang.name}{" "}
+                <span className="skills__lang-native">({lang.native})</span>
+              </h3>
+              <p>{lang.detail}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
   );
 }
+
 export default Skills;

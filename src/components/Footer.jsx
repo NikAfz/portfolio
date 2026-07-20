@@ -5,26 +5,20 @@ import RemoveDoneIcon from "@mui/icons-material/RemoveDone";
 import SendIcon from "@mui/icons-material/Send";
 import CircularProgress from "@mui/material/CircularProgress";
 
-function Footer(props) {
+function Footer() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-
   const [messageStatus, setMessageStatus] = useState("");
 
   async function handleSubmit(e) {
     e.preventDefault();
-
     setMessageStatus("loading");
 
-    const serviceId = "service_mw3o23d";
-    const templateId = "template_o4wkhph";
-    const publicKey = "8Lb5Xtz3XO_Xq6d6o";
-
     const data = {
-      service_id: serviceId,
-      template_id: templateId,
-      user_id: publicKey,
+      service_id: "service_mw3o23d",
+      template_id: "template_o4wkhph",
+      user_id: "8Lb5Xtz3XO_Xq6d6o",
       template_params: {
         from_name: name,
         from_email: email,
@@ -34,11 +28,7 @@ function Footer(props) {
     };
 
     try {
-      const res = await axios.post(
-        "https://api.emailjs.com/api/v1.0/email/send",
-        data
-      );
-      console.log(res.data);
+      await axios.post("https://api.emailjs.com/api/v1.0/email/send", data);
       setName("");
       setEmail("");
       setMessage("");
@@ -50,59 +40,81 @@ function Footer(props) {
   }
 
   return (
-    <footer id="footer" className="footer--container">
-      <form onSubmit={handleSubmit} className="contact--form">
-        <div className="contact-title--container">
-          <h1 className="contact--title">Contact Me</h1>
+    <footer id="contact" className="contact">
+      <div className="contact__inner">
+        <div className="contact__intro">
+          <p className="section__eyebrow section__eyebrow--on-dark">Contact</p>
+          <h2 className="contact__title">Let’s talk</h2>
+          <p className="contact__lede">
+            Have a project, question, or just want to say hi? Drop a message —
+            I’ll get back to you.
+          </p>
         </div>
-        <div className="contact--info">
-          <input
-            className="contact--name"
-            type="text"
-            name=""
-            id=""
-            placeholder="Your name *"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            required
-          />
-          <input
-            className="contact--email"
-            type="text"
-            name=""
-            id=""
-            placeholder="Your email *"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-        </div>
-        <textarea
-          className="contact--textarea"
-          name=""
-          id=""
-          placeholder="Your message *"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          required
-        ></textarea>
-        <button className="contact--button" type="submit">
-          {messageStatus === "loading" ? (
-            <CircularProgress size={30} color="inherit" />
-          ) : (
-            <>
-              Send
-              {messageStatus === "true" ? (
-                <DoneAllIcon />
-              ) : messageStatus === "false" ? (
-                <RemoveDoneIcon />
-              ) : (
-                <SendIcon />
-              )}
-            </>
+
+        <form onSubmit={handleSubmit} className="contact__form">
+          <div className="contact__row">
+            <label className="contact__field">
+              <span className="contact__label">Name</span>
+              <input
+                type="text"
+                placeholder="Your name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                required
+                autoComplete="name"
+              />
+            </label>
+            <label className="contact__field">
+              <span className="contact__label">Email</span>
+              <input
+                type="email"
+                placeholder="you@example.com"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+                autoComplete="email"
+              />
+            </label>
+          </div>
+          <label className="contact__field">
+            <span className="contact__label">Message</span>
+            <textarea
+              placeholder="What’s on your mind?"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              required
+              rows={6}
+            />
+          </label>
+          <button className="btn btn--primary contact__submit" type="submit">
+            {messageStatus === "loading" ? (
+              <CircularProgress size={22} color="inherit" />
+            ) : (
+              <>
+                Send message
+                {messageStatus === "true" ? (
+                  <DoneAllIcon fontSize="small" />
+                ) : messageStatus === "false" ? (
+                  <RemoveDoneIcon fontSize="small" />
+                ) : (
+                  <SendIcon fontSize="small" />
+                )}
+              </>
+            )}
+          </button>
+          {messageStatus === "true" && (
+            <p className="contact__status contact__status--ok">
+              Message sent — thanks!
+            </p>
           )}
-        </button>
-      </form>
+          {messageStatus === "false" && (
+            <p className="contact__status contact__status--err">
+              Something went wrong. Try again or email me directly.
+            </p>
+          )}
+        </form>
+      </div>
+      <p className="contact__credit">© {new Date().getFullYear()} NikAfz</p>
     </footer>
   );
 }

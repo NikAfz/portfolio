@@ -6,8 +6,8 @@ import cryptopia from "/projects/cryptopia.png";
 import ProM from "/projects/ProM.png";
 import libmate from "/projects/LibMate.png";
 
-function useProjectData(params) {
-  const [data, setData] = useState([
+function useProjectData() {
+  const [data] = useState([
     {
       name: "LibMate",
       img: libmate,
@@ -21,7 +21,7 @@ function useProjectData(params) {
       liveLink: "https://nikafz.github.io/watch-shop/",
     },
     {
-      name: "Ez search",
+      name: "Ez Search",
       img: ezSearch,
       codeLink: "https://github.com/NikAfz/EZ-search",
       liveLink: "https://nikafz.github.io/EZ-search/",
@@ -41,4 +41,5 @@ function useProjectData(params) {
   ]);
   return data;
 }
+
 export default useProjectData;
