@@ -184,7 +184,7 @@ doc
 // ——— Experience ———
 section("Experience");
 
-role("Frontend Developer", "Tadbir Kish Vira  ·  Dec 2025 – Present");
+role("Frontend Developer", "Tadbir Kish Vira  ·  Oct 2025 – Present");
 bullets([
   "Working as a frontend developer building and maintaining web interfaces with modern frontend tools.",
 ]);
