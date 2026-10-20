@@ -8,7 +8,9 @@ function App() {
     <BrowserRouter basename="/portfolio">
       <Routes>
         <Route path="/" element={<Landing />} />
+
         <Route path="/detail" element={<Portfolio />} />
+        
         <Route path="*" element={<Page404 />} />
       </Routes>
     </BrowserRouter>
